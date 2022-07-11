@@ -1,0 +1,14 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Projet numero 3 Openclassroom",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "author": "Cuzon Sofian",
+  "license": "ISC",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}

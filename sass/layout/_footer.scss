@@ -1,0 +1,50 @@
+.footer{
+    position: relative;
+    top: 250px;
+    background-color: rgb(41, 41, 41);
+    color: white;
+    h2{
+        padding-left: 40px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    &__lien{
+        ul{
+            margin: 0px;
+            padding-bottom: 20px;
+        }
+        li{
+            display: flex;
+            flex-direction: row;
+            margin: 0px 0px 5px 0px;
+        }
+        &-logo{
+            width: 20px;
+            padding-right: 2vw;
+        }
+    }
+}
+.footer_index{
+    background-color: rgb(41, 41, 41);
+    color: white;
+    h2{
+        padding-left: 40px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    &__lien{
+        ul{
+            margin: 0px;
+            padding-bottom: 20px;
+        }
+        li{
+            display: flex;
+            flex-direction: row;
+            margin: 0px 0px 5px 0px;
+        }
+        &-logo{
+            width: 20px;
+            padding-right: 2vw;
+        }
+    }
+}
