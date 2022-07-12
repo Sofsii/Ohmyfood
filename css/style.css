@@ -194,6 +194,13 @@ i {
   flex-direction: row;
   margin: 0px 0px 5px 0px;
 }
+.footer__lien li a {
+  display: flex;
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+}
 .footer__lien-logo {
   width: 20px;
   padding-right: 2vw;
@@ -216,6 +223,13 @@ i {
   display: flex;
   flex-direction: row;
   margin: 0px 0px 5px 0px;
+}
+.footer_index__lien li a {
+  display: flex;
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
 }
 .footer_index__lien-logo {
   width: 20px;
@@ -389,6 +403,13 @@ i {
   flex-direction: row;
   margin: 0px 0px 5px 0px;
 }
+.footer__lien li a {
+  display: flex;
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+}
 .footer__lien-logo {
   width: 20px;
   padding-right: 2vw;
@@ -411,6 +432,13 @@ i {
   display: flex;
   flex-direction: row;
   margin: 0px 0px 5px 0px;
+}
+.footer_index__lien li a {
+  display: flex;
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
 }
 .footer_index__lien-logo {
   width: 20px;
