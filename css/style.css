@@ -1,17 +1,11 @@
 @keyframes rotate {
   0% {
-    transform: scale(1) rotate(0deg);
     opacity: 1;
-    color: black;
-  }
-  50% {
-    transform: scale(0.7) rotate(180deg);
-    opacity: 1;
-    color: #9356DC;
+    width: 0%;
   }
   100% {
-    transform: scale(1) rotate(360deg);
     opacity: 1;
+    width: 100%;
   }
 }
 @keyframes begin {
@@ -26,7 +20,7 @@
 }
 @keyframes check {
   from {
-    transform: scale(1) rotate(0deg);
+    transform: scale(1) rotate(-25deg);
   }
   to {
     transform: scale(1) rotate(360deg);
@@ -35,12 +29,9 @@
 @keyframes block-check {
   0% {
     width: 4%;
-    border-radius: 50%;
-    height: 40%;
   }
   100% {
     width: 15%;
-    height: 100%;
   }
 }
 @keyframes starter {
@@ -109,7 +100,7 @@
   }
   100% {
     opacity: 0%;
-    z-index: 0;
+    z-index: -1;
   }
 }
 @keyframes index {
@@ -238,18 +229,12 @@ i {
 
 @keyframes rotate {
   0% {
-    transform: scale(1) rotate(0deg);
     opacity: 1;
-    color: black;
-  }
-  50% {
-    transform: scale(0.7) rotate(180deg);
-    opacity: 1;
-    color: #9356DC;
+    width: 0%;
   }
   100% {
-    transform: scale(1) rotate(360deg);
     opacity: 1;
+    width: 100%;
   }
 }
 @keyframes begin {
@@ -264,7 +249,7 @@ i {
 }
 @keyframes check {
   from {
-    transform: scale(1) rotate(0deg);
+    transform: scale(1) rotate(-25deg);
   }
   to {
     transform: scale(1) rotate(360deg);
@@ -273,12 +258,9 @@ i {
 @keyframes block-check {
   0% {
     width: 4%;
-    border-radius: 50%;
-    height: 40%;
   }
   100% {
     width: 15%;
-    height: 100%;
   }
 }
 @keyframes starter {
@@ -347,7 +329,7 @@ i {
   }
   100% {
     opacity: 0%;
-    z-index: 0;
+    z-index: -1;
   }
 }
 @keyframes index {
@@ -566,8 +548,7 @@ i {
   padding: 10px;
 }
 .tuto__list span {
-  background: #FF79DA;
-  background: linear-gradient(176deg, #FF79DA 0%, #9356DC 72%);
+  background: #9356DC;
   color: white;
   border-radius: 50px;
   text-align: center;
@@ -688,11 +669,13 @@ i {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 .restaurants article .detail-note {
   display: flex;
   align-items: center;
   margin: 20px;
+  height: 25px;
 }
 .restaurants article .detail-note .fa-heart {
   font-size: 25px;
@@ -702,14 +685,16 @@ i {
 }
 .restaurants article .detail-note .fa-solid {
   display: none;
-  color: #FF79DA;
 }
 .restaurants article .detail-note:hover .fa-regular {
   display: none;
 }
 .restaurants article .detail-note:hover .fa-solid {
   display: flex;
-  animation: rotate 2s ease-in-out;
+  animation: rotate 1s ease-in-out;
+  color: transparent;
+  background: linear-gradient(176deg, #FF79DA 0%, #9356DC 72%);
+  -webkit-background-clip: text;
 }
 .restaurants article .detail-texte {
   color: black;
@@ -749,18 +734,12 @@ i {
 
 @keyframes rotate {
   0% {
-    transform: scale(1) rotate(0deg);
     opacity: 1;
-    color: black;
-  }
-  50% {
-    transform: scale(0.7) rotate(180deg);
-    opacity: 1;
-    color: #9356DC;
+    width: 0%;
   }
   100% {
-    transform: scale(1) rotate(360deg);
     opacity: 1;
+    width: 100%;
   }
 }
 @keyframes begin {
@@ -775,7 +754,7 @@ i {
 }
 @keyframes check {
   from {
-    transform: scale(1) rotate(0deg);
+    transform: scale(1) rotate(-25deg);
   }
   to {
     transform: scale(1) rotate(360deg);
@@ -784,12 +763,9 @@ i {
 @keyframes block-check {
   0% {
     width: 4%;
-    border-radius: 50%;
-    height: 40%;
   }
   100% {
     width: 15%;
-    height: 100%;
   }
 }
 @keyframes starter {
@@ -858,7 +834,7 @@ i {
   }
   100% {
     opacity: 0%;
-    z-index: 0;
+    z-index: -1;
   }
 }
 @keyframes index {
@@ -946,7 +922,10 @@ i {
 }
 .menu .Menu_liste .like:hover .fa-solid {
   display: flex;
-  animation: rotate 1.5s;
+  animation: rotate 2s ease-in-out;
+  color: transparent;
+  background: linear-gradient(176deg, #FF79DA 0%, #9356DC 72%);
+  -webkit-background-clip: text;
 }
 .menu .Menu_liste .titre_ligne {
   background-color: #99E2D0;
@@ -969,8 +948,7 @@ i {
   background-color: white;
   margin: 10px;
   height: 60px;
-  width: 98%;
-  max-width: 500px;
+  width: 320px;
   border-radius: 20px;
   box-shadow: 0px 1px 2px rgb(143, 143, 143);
 }
@@ -1020,6 +998,7 @@ i {
 .menu .Menu_liste .menu_block :hover .block_valide {
   display: flex;
   animation: block-check 1.5s;
+  max-width: 50px;
 }
 .menu .Menu_liste .menu_block :hover i {
   animation: check 1.5s;

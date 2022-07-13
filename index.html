@@ -13,207 +13,191 @@
 </head>
 <body>
     <div class="start">
-        
         <div class="starter">
             <img src="img/ohmyfood.png" alt="logo ohmyfood">
         </div>
     </div>
-    <div class="index">
-        <Header class="header_index">
-            <div>
-                <img class="logo" src="img/ohmyfood.png" alt="Logo Ohmyfood">
-            </div>    
-        </Header>
-        <main>
-            <div class="recherche">
-                <form action="#" method="post" class="recherche__form">
-                    <div class="recherche__input">
-                        <label for="recherche" class="recherche__icon">
-                        <i class="fa-solid fa-location-dot"></i>
-                        </label>
-                        <input 
-                        type="text"
-                        name="recherche" 
-                        id="recherche" 
-                        value="Paris, Belleville" 
-                        autocomplete="off"
-                        />
+    
+    <Header class="header_index">
+        <img class="logo" src="img/ohmyfood.png" alt="Logo Ohmyfood">   
+    </Header>
+
+
+    <section class="recherche">
+        <form action="#" method="post" class="recherche__form">
+            <div class="recherche__input">
+                <label for="recherche" class="recherche__icon">
+                <i class="fa-solid fa-location-dot"></i>
+                </label>
+                <input 
+                type="text"
+                name="recherche" 
+                id="recherche" 
+                value="Paris, Belleville" 
+                autocomplete="off"
+                />
+            </div>
+            <div class="recherche__texte">
+                <h2>Réservez le menu qui vous convient</h2>
+                <p>Découvrez des restaurants d'éxception séléctionnés par nos soins</p>
+                <div>
+                    <button class="recherche__bouton" type="submit" aria-label="Rechercher">
+                    Explorer nos restaurants
+                    </button>
+                </div>
+            </div>                       
+        </form>
+    </section>
+
+    <section class="tuto">
+        <div class="tuto__titre">
+            <h2>Fonctionnement</h2>
+        </div>
+        <div class="tuto__list">
+            <div class="tuto__ligne">
+                <div class="tuto__list-num">
+                    <span>1</span>
+                </div>    
+                <div class="tuto__list-block">
+                    <h5><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</h5>
+                </div>
+            </div>
+            <div class="tuto__ligne">
+                <div class="tuto__list-num">
+                    <span>2</span>
+                </div>
+                <div class="tuto__list-block">
+                    <h5><i class="fa-solid fa-list-ul"></i>Composez votre menu</h5>
+                </div>
+            </div>   
+            <div class="tuto__ligne">
+                <div class="tuto__list-num">
+                    <span>3</span>
+                </div>
+                <div class="tuto__list-block">
+                    <h5><i class="fa-solid fa-store"></i>Dégustez au restaurant</h5>
+                </div>
+            </div>           
+        </div>
+    </section>
+
+
+    <main>
+        <section class="restaurants">
+            <div class="restaurants__titre">
+                <h2>Restaurants</h2>
+            </div>
+            <div class="articles">   
+                <article>
+                    <div class="image">
+                        <a href="la_palette_du_gout.html">
+                             <img src="img/la_palette_du_gout.jpg" alt="La palette du goût">
+                        </a>
+                        <div class="texte">
+                            <p>Nouveau</p>
+                        </div>
                     </div>
-                    <div class="recherche__texte">
-                        <h2>Réservez le menu qui vous convient</h2>
-                        <p>Découvrez des restaurants d'éxception séléctionnés par nos soins</p>
+                    <div class="detail">
+                        <div class="detail-texte">
+                            <h4>La palette du Goût</h4>
+                            <p>Ménilmontant</p>
+                        </div>
+                        <div class="detail-note">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                    </div>
+                </article>
+                       
+                <article>
+                    <div class="image">
+                        <a href="la_note_enchantée.html">
+                            <img src="img/la_note_enchante.jpg" alt="La note enchantée">
+                        </a>
                         <div>
-                        <button class="recherche__bouton" type="submit" aria-label="Rechercher">
-                            Explorer nos restaurants
-                        </button>
+                            <p class="texte">Nouveau</p>
+                        </div>
                     </div>
+                    <div class="detail">
+                        <div class="detail-texte">
+                            <h4>La note enchantée</h4>
+                            <p>Charonne</p>
+                        </div>
+                        <div class="detail-note">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
                     </div>
-                                    
-                </form>
+                </article>
+                    
+                <article>
+                    <div class="image">
+                        <a href="a_la_francaise.html">
+                            <img src="img/a_la_francaise.jpg" alt="À la francaise">
+                        </a>
+                    </div>
+                    <div class="detail">
+                        <div class="detail-texte">
+                            <h4>À la francaise</h4>
+                            <p>Cité rouge</p>
+                        </div>
+                        <div class="detail-note">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                    </div>
+                </article>
+                    
+                <article>
+                    <div class="image">
+                        <a href="le_delice_des_sens.html">
+                            <img src="img/le_delice_des_sens.jpg" alt="Le délice des sens">
+                        </a>
+                    </div>
+                    <div class="detail">
+                        <div class="detail-texte">
+                            <h4>Le délice des sens</h4>
+                            <p>Folie-Méricourt</p>
+                        </div>
+                        <div class="detail-note">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                    </div>
+                </article>                  
             </div>
-    
-    
-    
-    
-            <div class="tuto">
-                <div class="tuto__titre">
-                    <h2>Fonctionnement</h2>
-                </div>
-                
-                <div class="tuto__list">
-                    <div class="tuto__ligne">
-                         <div class="tuto__list-num">
-                            <span>1</span>
-                        </div>    
-                        <div class="tuto__list-block">
-                            <h5><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</h5>
-                        </div>
+        </section>
+    </main>
+    <Footer class="footer_index">
+        <div class="footer__logo">
+            <h2>ohmyfood</h2>
+        </div>
+        <div class="footer__lien">
+            <ul>
+                <li>
+                    <div class="footer__lien-logo">
+                        <i class="fa-solid fa-utensils"></i>
                     </div>
-                    <div class="tuto__ligne">
-                        <div class="tuto__list-num">
-                            <span>2</span>
-                        </div>
-                        <div class="tuto__list-block">
-                            <h5><i class="fa-solid fa-list-ul"></i>Composez votre menu</h5>
-                        </div>
+                    <div class="footer__lien-text">
+                        <p>Proposer un retaurant</p>
                     </div>   
-                    <div class="tuto__ligne">
-                        <div class="tuto__list-num">
-                            <span>3</span>
-                        </div>
-                        <div class="tuto__list-block">
-                            <h5><i class="fa-solid fa-store"></i>Dégustez au restaurant</h5>
-                        </div>
-                    </div>    
-                        
-                </div>
-            </div>
-            <div class="restaurants">
-                <div class="restaurants__titre">
-                    <h2>Restaurants</h2>
-                </div>
-                <div class="articles">
-                    
-                        <article>
-                            <div class="image">
-                                <a href="la_palette_du_gout.html">
-                                    <img src="img/la_palette_du_gout.jpg" alt="La palette du goût">
-                                </a>
-                                <div class="texte">
-                                    <p>Nouveau</p>
-                                </div>
-                            </div>
-                            <div class="detail">
-                                <div class="detail-texte">
-                                    <h4>La palette du Goût</h4>
-                                    <p>Ménilmontant</p>
-                                </div>
-                                <div class="detail-note">
-                                    <i class="fa-regular fa-heart"></i>
-                                    <i class="fa-solid fa-heart"></i>
-                                </div>
-                            </div>
-                        </article>
-                    
-                    
-                        <article>
-                            <div class="image">
-                                <a href="la_note_enchantée.html">
-                                    <img src="img/la_note_enchante.jpg" alt="La note enchantée">
-                                </a>
-                                <div>
-                                    <p class="texte">Nouveau</p>
-                                </div>
-                            </div>
-                            <div class="detail">
-                                <div class="detail-texte">
-                                    <h4>La note enchantée</h4>
-                                    <p>Charonne</p>
-                                </div>
-                                <div class="detail-note">
-                                    <i class="fa-regular fa-heart"></i>
-                                    <i class="fa-solid fa-heart"></i>
-                                </div>
-                            </div>
-                        </article>
-                    
-                    
-                        <article>
-                            <div class="image">
-                                <a href="a_la_francaise.html">
-                                    <img src="img/a_la_francaise.jpg" alt="À la francaise">
-                                </a>
-                            </div>
-                            <div class="detail">
-                                <div class="detail-texte">
-                                    <h4>À la francaise</h4>
-                                    <p>Cité rouge</p>
-                                </div>
-                                <div class="detail-note">
-                                    <i class="fa-regular fa-heart"></i>
-                                    <i class="fa-solid fa-heart"></i>
-                                </div>
-                            </div>
-                        </article>
-                    
-                    
-                        <article>
-                            <div class="image">
-                                <a href="le_delice_des_sens.html">
-                                    <img src="img/le_delice_des_sens.jpg" alt="Le délice des sens">
-                                </a>
-                            </div>
-                            <div class="detail">
-                                <div class="detail-texte">
-                                    <h4>Le délice des sens</h4>
-                                    <p>Folie-Méricourt</p>
-                                </div>
-                                <div class="detail-note">
-                                    <i class="fa-regular fa-heart"></i>
-                                    <i class="fa-solid fa-heart"></i>
-                                </div>
-                            </div>
-                        </article>
-                                 
-                </div>
-            </div>
-        </main>
-        <Footer>
-            <div class="footer_index">
-                <div class="footer__logo">
-                    <h2>ohmyfood</h2>
-                </div>
-                <div class="footer__lien">
-                    <ul>
-                        <li>
-                            <div class="footer__lien-logo">
-                                <i class="fa-solid fa-utensils"></i>
-                            </div>
-                            <div class="footer__lien-text">
-                                <p>Proposer un retaurant</p>
-                            </div>
-                            
-                        </li>
-                        <li>
-                            <div class="footer__lien-logo">
-                                <i class="fa-solid fa-handshake-angle"></i>
-                            </div>
-                            <div class="footer__lien-text">
-                                <p>Devenir partenaire</p>
-                            </div>
-                        </li>
-                        <li>
-                            <p>Mentions légales</p>
-                        </li>
-                        <li>
-                            <a href="mailto:contact@homyfood.com">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            
-        </Footer>
-    </div>
-    
+                </li>
+                <li>
+                    <div class="footer__lien-logo">
+                        <i class="fa-solid fa-handshake-angle"></i>
+                    </div>
+                    <div class="footer__lien-text">
+                        <p>Devenir partenaire</p>
+                    </div>
+                </li>
+                <li>
+                    <p>Mentions légales</p>
+                </li>
+                <li>
+                    <a href="mailto:contact@homyfood.com">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </Footer>    
 </body>
 </html>

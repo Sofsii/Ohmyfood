@@ -55,7 +55,10 @@
                 }
                 .fa-solid{
                     display: flex;
-                    animation: rotate 1.5s;
+                    animation: rotate 2s ease-in-out;
+                    color: transparent;
+                    background: linear-gradient(176deg, $couleur-secondaire 0%, $couleur-primaire 72%);
+                    -webkit-background-clip: text;
                 }
             }
         }
@@ -79,8 +82,7 @@
                 background-color: white;
                 margin: 10px;
                 height: 60px;
-                width: 98%;
-                max-width: 500px;
+                width: 320px;
                 border-radius: 20px;
                 box-shadow: 0px 1px 2px rgb(143 143 143);
                 p{
@@ -131,6 +133,7 @@
                 .block_valide{
                     display: flex;
                     animation: block-check 1.5s;
+                    max-width: 50px;
                 }
                 i{
                     animation: check 1.5s;

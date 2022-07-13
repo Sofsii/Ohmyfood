@@ -123,8 +123,7 @@
         width: 90%;
         padding: 10px;
         span{
-                background: $couleur-secondaire;
-                background: linear-gradient(176deg, $couleur-secondaire 0%, $couleur-primaire 72%);
+                background: $couleur-primaire;
                 color: white;
                 border-radius: 50px;
                 text-align: center;
@@ -250,10 +249,12 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            align-items: center;
             &-note{
                 display: flex;
                 align-items: center;
                 margin: 20px;
+                height: 25px;
                 .fa-heart{
                     font-size: 25px;
                 }
@@ -262,16 +263,17 @@
                 }
                 .fa-solid{
                     display: none;
-                    color: $couleur-secondaire;
                 }
                 &:hover{
                     .fa-regular{
                         display: none;
-                        
                     }
                     .fa-solid{
                         display: flex;
-                        animation: rotate 2s ease-in-out;
+                        animation: rotate 1s ease-in-out;
+                        color: transparent;
+                        background: linear-gradient(176deg, $couleur-secondaire 0%, $couleur-primaire 72%);
+                        -webkit-background-clip: text;
                     }
                 }
             }
