@@ -1,10 +1,8 @@
 @keyframes rotate {
   0% {
-    opacity: 1;
     width: 0%;
   }
   100% {
-    opacity: 1;
     width: 100%;
   }
 }
@@ -20,7 +18,7 @@
 }
 @keyframes check {
   from {
-    transform: scale(1) rotate(-25deg);
+    transform: scale(1) rotate(0deg);
   }
   to {
     transform: scale(1) rotate(360deg);
@@ -68,12 +66,10 @@
 }
 @keyframes point {
   from {
-    opacity: 100%;
-    background: #FF79DA;
+    width: 100%;
   }
   to {
-    opacity: 0%;
-    background: #9356DC;
+    width: 80%;
   }
 }
 @keyframes logostart {
@@ -114,9 +110,17 @@
     opacity: 100%;
   }
 }
-h1, h2, .logo {
-  font-family: "Shrikhand", cursive;
+h1, .logo {
+  font-family: "Shrikhand", sans-serif;
   margin: 0px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+h2, h3 {
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+  font-weight: 700;
 }
 
 p {
@@ -138,14 +142,16 @@ i {
 
 .header_menu {
   display: flex;
-  justify-content: space-around;
-  padding-top: 10px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
 }
 .header_menu .logo {
-  width: 60%;
-  max-width: 300px;
-  height: 100%;
-  margin-right: 30%;
+  width: 40vw;
+  max-width: 200px;
 }
 .header_menu .logo img {
   width: 100%;
@@ -153,16 +159,10 @@ i {
 .header_menu a {
   text-decoration: none;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  height: 100%;
-  width: 100%;
 }
 .header_menu i {
-  display: flex;
-  align-items: baseline;
   color: rgb(41, 41, 41);
-  font-size: 35px;
+  font-size: 6vw;
 }
 
 .footer {
@@ -229,11 +229,9 @@ i {
 
 @keyframes rotate {
   0% {
-    opacity: 1;
     width: 0%;
   }
   100% {
-    opacity: 1;
     width: 100%;
   }
 }
@@ -249,7 +247,7 @@ i {
 }
 @keyframes check {
   from {
-    transform: scale(1) rotate(-25deg);
+    transform: scale(1) rotate(0deg);
   }
   to {
     transform: scale(1) rotate(360deg);
@@ -297,12 +295,10 @@ i {
 }
 @keyframes point {
   from {
-    opacity: 100%;
-    background: #FF79DA;
+    width: 100%;
   }
   to {
-    opacity: 0%;
-    background: #9356DC;
+    width: 80%;
   }
 }
 @keyframes logostart {
@@ -343,9 +339,17 @@ i {
     opacity: 100%;
   }
 }
-h1, h2, .logo {
-  font-family: "Shrikhand", cursive;
+h1, .logo {
+  font-family: "Shrikhand", sans-serif;
   margin: 0px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+h2, h3 {
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+  font-weight: 700;
 }
 
 p {
@@ -445,7 +449,7 @@ i {
   animation: logostart infinite 2s alternate;
 }
 .start .starter {
-  padding: 50px;
+  padding: 10vw;
   display: flex;
   justify-content: space-around;
   border-radius: 50%;
@@ -466,9 +470,8 @@ i {
   box-shadow: 0px 1px 5px black;
 }
 .header_index .logo {
-  min-width: 250px;
-  max-width: 1500px;
-  width: 2vw;
+  width: 40vw;
+  max-width: 200px;
   margin: 20px;
 }
 
@@ -566,7 +569,7 @@ i {
   width: 80%;
 }
 .tuto__list .tuto__list-block:hover {
-  background: rgba(167, 80, 255, 0.288);
+  background: rgba(168, 80, 255, 0.171);
 }
 .tuto__list .tuto__list-block:hover i {
   color: #9356DC;
@@ -579,7 +582,7 @@ i {
 .tuto__list .tuto__list-block h5 {
   padding: 0px;
   margin: 0px;
-  font-size: 20px;
+  font-size: 16px;
 }
 @media (min-width: 992px) {
   .tuto__titre {
@@ -690,7 +693,7 @@ i {
   display: none;
 }
 .restaurants article .detail-note:hover .fa-solid {
-  display: flex;
+  display: block;
   animation: rotate 1s ease-in-out;
   color: transparent;
   background: linear-gradient(176deg, #FF79DA 0%, #9356DC 72%);
@@ -734,11 +737,9 @@ i {
 
 @keyframes rotate {
   0% {
-    opacity: 1;
     width: 0%;
   }
   100% {
-    opacity: 1;
     width: 100%;
   }
 }
@@ -754,7 +755,7 @@ i {
 }
 @keyframes check {
   from {
-    transform: scale(1) rotate(-25deg);
+    transform: scale(1) rotate(0deg);
   }
   to {
     transform: scale(1) rotate(360deg);
@@ -802,12 +803,10 @@ i {
 }
 @keyframes point {
   from {
-    opacity: 100%;
-    background: #FF79DA;
+    width: 100%;
   }
   to {
-    opacity: 0%;
-    background: #9356DC;
+    width: 80%;
   }
 }
 @keyframes logostart {
@@ -848,9 +847,17 @@ i {
     opacity: 100%;
   }
 }
-h1, h2, .logo {
-  font-family: "Shrikhand", cursive;
+h1, .logo {
+  font-family: "Shrikhand", sans-serif;
   margin: 0px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+h2, h3 {
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+  font-weight: 700;
 }
 
 p {
@@ -902,13 +909,20 @@ i {
   margin-right: 10%;
   margin-left: 5%;
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 .menu .Menu_liste .menu_titre i {
   font-size: 32px;
 }
+.menu .Menu_liste .like {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .menu .Menu_liste .like .fa-heart {
   font-size: 25px;
   margin-left: 50px;
+  height: f;
 }
 .menu .Menu_liste .like .fa-regular {
   color: black;
@@ -948,8 +962,6 @@ i {
   background-color: white;
   margin: 10px;
   height: 60px;
-  width: 98%;
-  max-width: 500px;
   border-radius: 20px;
   box-shadow: 0px 1px 2px rgb(143, 143, 143);
 }
@@ -979,7 +991,6 @@ i {
   border-radius: 0px 20px 20px 0px;
 }
 .menu .Menu_liste .menu_block .block_valide .overflow {
-  max-width: 80%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

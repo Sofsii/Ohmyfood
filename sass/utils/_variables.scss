@@ -6,11 +6,9 @@ $couleur-background: rgb(240, 240, 240);
 
 @keyframes rotate{
     0% {
-        opacity: 1;
         width: 0%;
     }  
     100%{
-        opacity: 1;
         width: 100%;
     }
 }
@@ -26,7 +24,7 @@ $couleur-background: rgb(240, 240, 240);
 }
 @keyframes check {
     from{
-        transform: scale(1) rotate(-25deg);
+        transform: scale(1) rotate(0deg);
         
     }
     to{
@@ -75,12 +73,10 @@ $couleur-background: rgb(240, 240, 240);
 }
 @keyframes point{
     from{
-        opacity: 100%;
-        background: $couleur-secondaire;
+        width: 100%;
     }
     to{
-        opacity: 0%;
-        background: $couleur-primaire;
+        width: 80%;
     }
 }
 @keyframes logostart{
